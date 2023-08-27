@@ -1,8 +1,8 @@
 import React from "react";
-import MyNavBar from "./Navbar";
-import Jumbotron from "./Jumbotron";
-import MyCard from "./Card";
-import Footer from "./Footer";
+import MyNavBar from "./Componentes/Navbar";
+import Jumbotron from "./Componentes/Jumbotron";
+import MyCard from "./Componentes/Card";
+import Footer from "./Componentes/Footer";
 
 const Body = () => {
     return (
