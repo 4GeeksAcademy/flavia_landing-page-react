@@ -8,8 +8,10 @@ const Body = () => {
     return (
         <div>
             <MyNavBar />
+            <div className="container">
             <Jumbotron />
             <Card />
+            </div>
             <Footer />
         </div>
     )
