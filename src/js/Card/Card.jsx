@@ -1,60 +1,30 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const MyCard = () => {
 	return (
-		<div className="d-flex flex-row">
-			<Card style={{ width: '18rem' }} className="me-3 text-center">
+		<Row xs={1} md={4} className="g-4">
+		  {Array.from({ length: 4 }).map((_, idx) => (
+			<Col key={idx}>
+			  <Card>
 				<Card.Img variant="top" src="https://via.placeholder.com/500x325" />
-				<Card.Body>
-					<Card.Title className="pt-2">Card Title</Card.Title>
-					<Card.Text className="pb-5">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Simimet sed non voluptatum esse commodi sapiente quam obcaecati consequatur.
-					</Card.Text>
+				<Card.Body className="text-center">
+				  <Card.Title>Card title</Card.Title>
+				  <Card.Text>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, corporis iusto illum cupiditate architecto similique odit omnis deserunt? Harum fugiat accusamus quisquam velit eum dolorum amet, repellendus quod hic culpa?
+				  </Card.Text>
 				</Card.Body>
-				<div className="border p-2 bg-secondary-subtle">
-					<Button variant="primary">Go somewhere</Button>
+				<div className="border p-3 text-center bg-light-subtle">
+				<Button variant="primary">Go somewhere</Button>
 				</div>
-    		</Card>
-			<Card style={{ width: '18rem' }} className="me-3 text-center">
-				<Card.Img variant="top" src="https://via.placeholder.com/500x325" />
-				<Card.Body>
-					<Card.Title className="pt-2">Card Title</Card.Title>
-					<Card.Text className="pb-5">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Simimet sed non voluptatum esse commodi sapiente quam obcaecati consequatur.
-					</Card.Text>
-				</Card.Body>
-				<div className="border p-2 bg-secondary-subtle">
-					<Button variant="primary">Go somewhere</Button>
-				</div>
-    		</Card>
-			<Card style={{ width: '18rem' }} className="me-3 text-center">
-				<Card.Img variant="top" src="https://via.placeholder.com/500x325" />
-				<Card.Body>
-					<Card.Title className="pt-2">Card Title</Card.Title>
-					<Card.Text className="pb-5">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Simimet sed non voluptatum esse commodi sapiente quam obcaecati consequatur.
-					</Card.Text>
-				</Card.Body>
-				<div className="border p-2 bg-secondary-subtle">
-					<Button variant="primary">Go somewhere</Button>
-				</div>
-    		</Card>
-			<Card style={{ width: '18rem' }} className="text-center">
-				<Card.Img variant="top" src="https://via.placeholder.com/500x325" />
-				<Card.Body>
-					<Card.Title className="pt-2">Card Title</Card.Title>
-					<Card.Text className="pb-5">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Simimet sed non voluptatum esse commodi sapiente quam obcaecati consequatur.
-					</Card.Text>
-				</Card.Body>
-				<div className="border p-2 bg-secondary-subtle">
-					<Button variant="primary">Go somewhere</Button>
-				</div>
-    		</Card>
-		</div>
-	)
+			  </Card>
+			</Col>
+		  ))}
+		</Row>
+	  );
 };
 
 export default MyCard;
