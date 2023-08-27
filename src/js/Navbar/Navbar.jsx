@@ -1,30 +1,32 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Stack from 'react-bootstrap/Stack';
 import "./style.css";
 
 const MyNavBar = () => {
 	return (
-	<Stack direction="horizontal" gap={3}>
-		<Navbar bg="dark" data-bs-theme="dark">
-		<Container>
-		<div className="p-2">
-		<Navbar.Brand href="#home">Start Bootstrap</Navbar.Brand>
-	  	</div>
-      	<div className="p-2 ms-auto">
-		  <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-			<Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-		</div>
-      	<div className="p-2">Third item</div>
-		</Container>
-		</Navbar>
-    </Stack>
+		<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</nav>
 	)
 };
 

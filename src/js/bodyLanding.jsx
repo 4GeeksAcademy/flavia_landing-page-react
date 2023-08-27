@@ -1,7 +1,7 @@
 import React from "react";
 import MyNavBar from "./Navbar";
 import Jumbotron from "./Jumbotron";
-import Card from "./Card";
+import MyCard from "./Card";
 import Footer from "./Footer";
 
 const Body = () => {
@@ -10,7 +10,7 @@ const Body = () => {
             <MyNavBar />
             <div className="container">
             <Jumbotron />
-            <Card />
+            <MyCard />
             </div>
             <Footer />
         </div>
